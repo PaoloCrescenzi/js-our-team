@@ -30,7 +30,11 @@ const teamMember = [
 console.log(teamMember);
 
 function addElement () {
-    const element = document.createElement("div");
-    element.appendChild(document.createTextNode('The man who mistook his wife for a hat'));
-    document.getElementbyId('lista').appendChild(element);
-}
+    const element = document.createElement("li");
+    const listaEl = document.getElementById("lista");
+    element.innerHTML = (teamMember)
+    listaEl.append(element)
+    
+};
+
+addElement();
